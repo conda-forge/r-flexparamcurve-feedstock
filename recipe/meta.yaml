@@ -1,4 +1,4 @@
-{% set version = '1.5-6' %}
+{% set version = "1.5-7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/FlexParamCurve_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/FlexParamCurve/FlexParamCurve_{{ version }}.tar.gz
-  sha256: ed0b18a8bd3336e20e268906d52a7909a07f480cf33069bbc905acc612490c5c
+  sha256: c2f6ceedd6a630f63ade8cd92356dace99c482cd62cfd2db97553887804d6e56
 
 build:
   number: 0
@@ -41,8 +41,7 @@ test:
 about:
   home: https://pennstate.academia.edu:443/SteveOswald
   license: GPL-2.0-only
-  summary: Model selection tools and 'selfStart' functions to fit parametric curves in 'nls',
-    'nlsList' and 'nlme' frameworks.
+  summary: Model selection tools and 'selfStart' functions to fit parametric curves in 'nls', 'nlsList' and 'nlme' frameworks.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
